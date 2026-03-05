@@ -76,3 +76,5 @@ showCity("Erro: " + err.message);
 // Preencher automaticamente ao abrir
 const last = localStorage.getItem("lastCity");
 if (last) cityEl.value = last;
+console.log("O script carregou!");
+alert("Script funcionando!");
