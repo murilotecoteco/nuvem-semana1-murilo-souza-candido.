@@ -1,46 +1,60 @@
 :root {
-font-family: system-ui, Arial, sans-serif;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
 }
+
 body {
-margin: 0;
-background: #f6f7fb;
-color: #111;
+    margin: 0;
+    background: #f6f7fb;
+    color: #111;
+    line-height: 1.5;
 }
+
 .container {
-max-width: 900px;
-margin: 0 auto;
-padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
 }
+
 h1 {
-margin: 0 0 8px 0;
-
-Página 3
-
+    margin: 0 0 8px 0;
+    color: #1a202c;
 }
+
 .card {
-background: #fff;
-border: 1px solid #e6e6e6;
-border-radius: 12px;
-padding: 16px;
-margin: 14px 0;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
+
 .muted {
-color: #555;
+    color: #555;
+    font-size: 0.95rem;
 }
+
 button {
-padding: 10px 12px;
-border-radius: 10px;
-border: 1px solid #ddd;
-cursor: pointer;
-background: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #fff;
+    font-weight: 500;
+    transition: background 0.2s;
 }
+
 button:hover {
-background: #f0f0f0;
+    background: #f0f0f0;
 }
+
 .code {
-background: #0f172a;
-color: #e2e8f0;
-padding: 12px;
-border-radius: 10px;
-overflow-x: auto;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 14px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    min-height: 20px;
 }
