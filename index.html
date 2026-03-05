@@ -1,48 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-
-Página 2
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Semana 1 - Hello Cloud</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semana 1 - Hello Cloud</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="container">
-<h1>Hello Cloud (Semana 1)</h1>
-<p>Aluno(a): <span class="muted">Murilo de Souza Cândido </span></p>
-<section class="card">
-<h2>Checklist</h2>
-<ul>
-<li>Repositorio criado no GitHub</li>
-<li>Arquivos: index.html, style.css, script.js</li>
-<li>GitHub Pages ativado</li>
-</ul>
-</section>
-<section class="card">
-<h2>Status</h2>
-<p id="status" class="muted">Carregando...</p>
-<p class="muted">Horario local: <span id="clock">--:--</span></p>
-</section>
-<section class="card">
-<h2>(Opcional) Teste de API publica</h2>
-<p class="muted">Se quiser, clique no botao para testar fetch.</p>
-<button id="btn">Testar API</button>
-<pre id="api" class="code"></pre>
-</section>
-  <section class="card">
-<h2>Bônus — Clima por cidade</h2>
-<label class="muted" for="city">Cidade:</label><br/>
-<input id="city" placeholder="Ex.: Assis Chateaubriand" />
-<button id="btnCity">Buscar clima</button>
-<pre id="cityOut" class="code"></pre>
-</section>
-<footer class="muted">
-Publicado com GitHub Pages.
-</footer>
-</main>
-<script src="script.js"></script>
+    <main class="container">
+        <h1>Hello Cloud (Semana 1)</h1>
+        <p>Aluno(a): <span class="muted">Murilo de Souza Cândido</span></p>
+
+        <section class="card">
+            <h2>Checklist</h2>
+            <ul>
+                <li>Repositório criado no GitHub</li>
+                <li>Arquivos: index.html, style.css, script.js</li>
+                <li>GitHub Pages ativado</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Status</h2>
+            <p id="status" class="muted">Carregando...</p>
+            <p class="muted">Horário local: <span id="clock">--:--:--</span></p>
+        </section>
+
+        <section class="card">
+            <h2>(Opcional) Teste de API pública</h2>
+            <p class="muted">Se quiser, clique no botão para testar fetch (Agify API).</p>
+            <button id="btn">Testar API</button>
+            <pre id="api" class="code"></pre>
+        </section>
+
+        <section class="card">
+            <h2>Bônus — Clima por cidade</h2>
+            <label class="muted" for="city">Cidade:</label><br/>
+            <input id="city" placeholder="Ex.: Assis Chateaubriand" style="margin-top: 8px; padding: 8px; border-radius: 5px; border: 1px solid #ddd; width: 80%;" />
+            <button id="btnCity" style="margin-top: 8px;">Buscar clima</button>
+            <pre id="cityOut" class="code" style="margin-top: 15px;"></pre>
+        </section>
+
+        <footer class="muted">
+            Publicado com GitHub Pages.
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
