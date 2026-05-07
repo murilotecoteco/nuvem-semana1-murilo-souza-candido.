@@ -72,3 +72,31 @@ btnCity.addEventListener("click", async function() {
 
 const last = localStorage.getItem("lastCity");
 if (last) cityEl.value = last;
+const btnPost = document.getElementById("btnPost");
+
+btnPost.addEventListener("click", async () => {
+    apiEl.textContent = "Enviando POST...";
+
+    try {
+        const resp = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                turma: "Serviços em Nuvem",
+                atividade: "Semana 2",
+                timestamp: new Date().toISOString()
+            })
+        });
+
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+
+        const data = await resp.json();
+
+        apiEl.textContent = JSON.stringify(data, null, 2);
+
+    } catch (err) {
+        apiEl.textContent = "Erro no POST: " + err.message;
+    }
+});
